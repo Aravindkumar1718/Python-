@@ -1,0 +1,12 @@
+name=input("Enter your name:")
+email=input("Enter your email:")
+age=int(input("Enter your age:"))
+mobile_no=int(input("Enter your mobile_no:"))
+dept=
+file = open ("f3.txt", 'a')
+file.write(f"{name} {email} {age} {mobile_no} {dept}\n")
+file.write(f"{name} {email} {age} {mobile_no} {dept}\n")
+file.write(f"{name} {email} {age} {mobile_no} {dept}\n")
+file.write(f"{name} {email} {age} {mobile_no} {dept}\n")
+file.write(f"{name} {email} {age} {mobile_no} {dept}\n")
+file.close()

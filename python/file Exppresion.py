@@ -1,0 +1,20 @@
+filel = open("f1.txt", 'r')
+print (filel.read())
+file = open ("fl.txt", "w")
+file.write("this is java file")
+file.write("\n")
+file.write("this is c++ file")
+file.close()
+file = open ("f2.txt", 'a')
+file.write("java 25 java04@email.com\n")
+file.write("java 25 java04@email.com\n")
+file.write("java 25 java04@email.com")
+file.close()
+userDataStr = open('f2.txt', 'r').read()
+allUser = userDataStr.split('\n')
+userObj = []
+for user in allUser:
+    userInfoList = user.split(" ")
+    userDict = {"name":userInfoList[0], "age" : userInfoList[1],"email": userInfoList[2]}
+    userObj.append (userDict)
+print(userObj)
